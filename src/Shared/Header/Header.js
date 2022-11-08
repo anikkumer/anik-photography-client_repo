@@ -37,6 +37,12 @@ const Header = () => {
             </li>
           </ul>
         </div>
+        <img
+          src="https://editzstock.com/wp-content/uploads/2022/05/Dslr-camera-Photography-Logo-PNG-Free-Download-1.png"
+          alt=""
+          width-100px
+          height-100px
+        />
         <Link to="/" className="btn btn-ghost normal-case text-xl text-cyan-50">
           Anik's Photography
         </Link>
