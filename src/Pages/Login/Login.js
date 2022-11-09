@@ -20,6 +20,7 @@ const Login = () => {
                 type="text"
                 name="email"
                 placeholder="email"
+                required
                 className="input input-bordered"
               />
             </div>
@@ -31,13 +32,9 @@ const Login = () => {
                 type="text"
                 name="password"
                 placeholder="password"
+                required
                 className="input input-bordered"
               />
-              <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label>
             </div>
             <div className="form-control mt-6">
               <input className="btn btn-primary" type="submit" value="Login" />
