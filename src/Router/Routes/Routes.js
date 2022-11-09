@@ -3,7 +3,9 @@ import Blog from "../../Pages/Blog/Blog";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Home from "../../Pages/Home/Home";
 import Services from "../../Pages/Services/Services";
-import LoggedIn from "../../Pages/LoggedIn/LoggedIn";
+import Register from "../../Pages/Register/Register";
+import Slider from "../../Pages/Slider/Slider";
+import Login from "../../Pages/Login/Login";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -25,8 +27,16 @@ const router = createBrowserRouter([
         element: <Blog></Blog>,
       },
       {
-        path: "/loggedin",
-        element: <LoggedIn></LoggedIn>,
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/slider",
+        element: <Slider></Slider>,
       },
     ],
   },
