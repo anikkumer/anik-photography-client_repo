@@ -1,9 +1,28 @@
-import React from "react";
+import { getAuth } from "firebase/auth";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Contexts/AuthProvider/AuthProvider";
+import app from "../../firebase/firebase.config";
+
+const auth = getAuth(app);
 
 const Login = () => {
+  const { signIn } = useContext(AuthContext);
   const handleLogin = (event) => {
     event.preventDefault();
+
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+    signIn(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
@@ -29,7 +48,7 @@ const Login = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 name="password"
                 placeholder="password"
                 required
