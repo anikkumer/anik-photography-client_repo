@@ -18,7 +18,7 @@ const About = () => {
             powerful influencer in the photography community. I worked with
             renowned companies like Harper’s BAZAAR.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary">Get More Info</button>
         </div>
       </div>
     </div>
