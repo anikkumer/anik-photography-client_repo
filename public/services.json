@@ -1,0 +1,44 @@
+[
+    {
+    "service_name": "Wedding_photography",
+    "image": "https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/wedding-photography/wedding_P3a_720x350.jpg.img.jpg",
+    "description": "Wedding photographers capture memories for brides and grooms, creating a photographic narrative of wedding ceremonies. They take action shots of pre-ceremony preparations, the marriage ceremony, and the reception. They also take posed shots of the bride, groom, wedding party, and family members.Wedding photography is a specialty in photography that is primarily focused on the photography of events and activities relating to weddings. It may include other types of portrait photography of the couple before the official wedding day, such as a pre-wedding engagement session .",
+    "price": 300,
+    "rating": 5.0
+},
+    {
+    "service_name": "Fashion_photography",
+    "image": "https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/wedding-photography/wedding_P3c_720x350.jpg.img.jpg",
+    "description": "Fashion photography focuses on the display of fashion clothing and items. It is most common on advertising boards and in fashion magazines. The photography will usually feature models wearing the display items. Fashion photography has existed almost as long as photography itself has been around.A fashion photograph is, simply, a photograph made specifically to show (or, in some cases, to allude to) clothing or accessories, usually with the intent of documenting or selling the fashion. Photographs of fashionable dress, in existence since the invention of photography in 1839, are not fashion photography. The distinguishing feature—and the common denominator in the enormous diversity of style, approach, and content—is the fashion photograph's intent to convey fashion or a fashionable lifestyle.",
+    "price": 200,
+    "rating": 4.5
+},
+    {
+    "service_name": "Natural_photography",
+    "image": "https://butnaturalphotography.com/wp-content/uploads/2018/02/DSC_7378-Edit.jpg",
+    "description": "Nature photography is a wide range of photography taken outdoors and devoted to displaying natural elements such as landscapes, wildlife, plants, and close-ups of natural scenes and textures.The range of career possibilities for a nature photographer is very wide. While not everyone can land a job with National Geographic or Nature magazine, there are plenty of opportunities for photographers who want to focus their lenses on the natural world. Photographers can earn a living by getting a full-time position at a magazine or other publication, but most nature photographers work on a freelance basis.",
+    "price": 250,
+    "rating": 3.5
+},
+    {
+    "service_name": "Wildlife_photography",
+    "image": "https://i.pinimg.com/736x/10/83/ad/1083ada548d985a27a8c9803616b545c.jpg",
+    "description": "Wildlife photography is one of the most exciting photographic genres out there. But it can be difficult to get started as a wildlife photographer because of all the gear, technical know-how, and additional knowledge required. Wildlife photography is a genre of photography that records the life of animals in their natural settings, like in a forest or underwater. So, wildlife photography often constitutes the images of animals in movement or action such as eating, fighting, or in flight.",
+    "price": 300,
+    "rating": 4.0
+},
+    {
+    "service_name": "Sports_photography",
+    "image": "https://cc-prod.scene7.com/is/image/CCProdAuthor/Sports-photography_P5a_583x382-1?$pjpeg$&jpegSize=100&wid=583",
+    "description": "Sports photography is a type of photography that covers every sport and sporting event, capturing the action of a game and behind the scenes of the players. This type of photography helps to promote brands, the players, as well as the sport.Sports photography refers to the genre of photography that covers all types of sports. In the majority of cases, professional sports photography is a branch of photojournalism, while amateur sports photography, such as photos of children playing association football, is a branch of vernacular photography.",
+    "price": 350,
+    "rating": 4.5
+},
+    {
+    "service_name": "Food_photography",
+    "image": "https://clicklovegrow.com/wp-content/uploads/2020/03/Naomi-Sherman-Advanced-Graduate4.jpg",
+    "description": "Food photography is an area of photography where food is photographed as the main subject for still images. A subset of commercial photography, the images are then used in product packaging, cookbooks, billboards, marketing materials, and more.A food photographer takes pictures of food for magazine spreads, cookbooks, advertisements, and packaging. His job is to photograph each food in such a way that the resulting picture suggests its smells, textures, and tastes. In order to do this, he must arrange each dish in a visually pleasing way, position his lighting to emphasize the dish features he wishes to highlight, and get his shot before the food has degraded in any way.",
+    "price": 300,
+    "rating": 3.5
+}
+]
