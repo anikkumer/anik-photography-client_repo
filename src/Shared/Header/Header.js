@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Contexts/AuthProvider/AuthProvider";
 
 const Header = () => {
-  const { profile, logOut } = useContext(AuthContext);
-  console.log("context", profile);
+  const { user, logOut } = useContext(AuthContext);
+  console.log("context", user);
 
   const handleSignOut = () => {
     logOut()
@@ -19,7 +19,7 @@ const Header = () => {
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-8 w-8"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -47,12 +47,14 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <img
-          src="https://editzstock.com/wp-content/uploads/2022/05/Dslr-camera-Photography-Logo-PNG-Free-Download-1.png"
-          alt=""
-          width-100px
-          height-100px
-        />
+        <Link to="/">
+          {" "}
+          <img
+            src="https://editzstock.com/wp-content/uploads/2022/05/Dslr-camera-Photography-Logo-PNG-Free-Download-1.png"
+            alt=""
+            className="w-16"
+          />
+        </Link>
         <Link to="/" className="btn btn-ghost normal-case text-xl text-cyan-50">
           Anik's Photography
         </Link>
@@ -75,13 +77,8 @@ const Header = () => {
           tabIndex={0}
           className="mt-3 p-2 shadow menu menu-compact dropdown-content items-center bg-base-400 text-cyan-50 rounded-box w-52"
         >
-          <li>
-            <Link to="/login" className="justify-between">
-              Login
-            </Link>
-          </li>
-          <li>{profile?.email && <span>{profile.email}</span>}</li>
-          {profile?.email ? (
+          <li>{user?.email && <span>{user.email}</span>}</li>
+          {user?.email ? (
             <button onClick={handleSignOut} className="btn btn-sm">
               Sign Out
             </button>

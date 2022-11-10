@@ -15,7 +15,7 @@ export const AuthContext = createContext();
 const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
-  const [profile, setProfile] = useState({ displayName: "Batas Ali" });
+  //   const [profile, setProfile] = useState({});
 
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -60,7 +60,7 @@ const AuthProvider = ({ children }) => {
   const authInfo = {
     user,
     loading,
-    profile,
+
     createUser,
     signIn,
     logOut,
