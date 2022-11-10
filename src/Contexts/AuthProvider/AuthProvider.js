@@ -18,21 +18,24 @@ const AuthProvider = ({ children }) => {
   const [profile, setProfile] = useState({ displayName: "Batas Ali" });
 
   const [user, setUser] = useState(null);
-  const [loading, setloading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   const providerLogin = (provider) => {
     return signInWithPopup(auth, provider);
   };
 
   const createUser = (email, password) => {
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
   const signIn = (email, password) => {
+    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   const logOut = () => {
+    setLoading(true);
     return signOut(auth);
   };
 
@@ -46,7 +49,7 @@ const AuthProvider = ({ children }) => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       console.log(currentUser);
       setUser(currentUser);
-      setloading(false);
+      setLoading(false);
     });
 
     return () => {

@@ -6,6 +6,7 @@ import Services from "../../Pages/Services/Services";
 import Register from "../../Pages/Register/Register";
 import Slider from "../../Pages/Slider/Slider";
 import Login from "../../Pages/Login/Login";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -20,7 +21,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/services",
-        element: <Services></Services>,
+        element: (
+          <PrivateRoute>
+            <Services></Services>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/blog",
