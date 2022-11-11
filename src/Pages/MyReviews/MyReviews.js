@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Contexts/AuthProvider/AuthProvider";
+import useTitle from "../../hooks/useTitle";
 
 const MyReviews = () => {
+  useTitle("MyReviews");
   const { _id, service_name, price } = useLoaderData();
   const { user } = useContext(AuthContext);
   const handleOrderNow = (event) => {
@@ -23,7 +25,7 @@ const MyReviews = () => {
       name,
     };
 
-    fetch("http://localhost:5000/orders", {
+    fetch("https://anik-photography-server.vercel.app/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const ServiceCard = () => {
+const Service = (props) => {
   const { _id, service_name, image, description, price, rating } =
-    useLoaderData();
+    props.service;
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
@@ -11,19 +11,24 @@ const ServiceCard = () => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{service_name}</h2>
-        <p>{description}</p>
+        {/* <p>{description}</p> */}
+        {description.length > 200 ? (
+          <p>
+            {description.slice(0, 100) + "..."}
+            <Link className="text-sky-500" to={`/services/${_id}`}>
+              Read More
+            </Link>
+          </p>
+        ) : (
+          <p>{description}</p>
+        )}
         <div className="card-actions justify-end">
           <div className="badge badge-outline">${price}</div>
           <div className="badge badge-outline">{rating}</div>
-        </div>
-        <div>
-          <Link to={`/myReview/${_id}`}>
-            <button className="btn btn-primary">My Reviews</button>
-          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default ServiceCard;
+export default Service;

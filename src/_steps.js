@@ -6,6 +6,7 @@ BASIC PROJECT SETUP
 4. install firebase and react router dom
 5. install tailwind and daisiUI library
 6. install cors, node express, mongodb
+7. data load mongodb
 7.
 */
 

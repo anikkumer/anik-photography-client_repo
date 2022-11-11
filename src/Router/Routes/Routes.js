@@ -8,6 +8,9 @@ import Slider from "../../Pages/Slider/Slider";
 import Login from "../../Pages/Login/Login";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import MyReviews from "../../Pages/MyReviews/MyReviews";
+import Service from "../../Pages/Services/Service";
+import ServiceCard from "../../Pages/Services/ServiceCard";
+import Orders from "../../Pages/Orders/Orders";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -25,18 +28,26 @@ const router = createBrowserRouter([
         element: <Services></Services>,
       },
       {
-        path: "/myReviews/:id",
-        element: (
-          <PrivateRoute>
-            <MyReviews></MyReviews>
-          </PrivateRoute>
-        ),
+        path: "/services/:id",
+        element: <ServiceCard></ServiceCard>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(
+            `https://anik-photography-server.vercel.app/services/${params.id}`
+          ),
       },
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+
+      {
+        path: "/myReviews",
+        element: (
+          <PrivateRoute>
+            {" "}
+            <MyReviews></MyReviews>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
@@ -49,6 +60,10 @@ const router = createBrowserRouter([
       {
         path: "/slider",
         element: <Slider></Slider>,
+      },
+      {
+        path: "/orders",
+        element: <Orders></Orders>,
       },
     ],
   },
