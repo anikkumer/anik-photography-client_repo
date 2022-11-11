@@ -14,3 +14,7 @@ BASIC PROJECT SETUP
 ROUTER SETUP
 1. install react-router-dom
 */
+
+/*
+live link: https://anik-photography-26fb4.web.app/
+*/

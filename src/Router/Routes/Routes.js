@@ -11,6 +11,7 @@ import MyReviews from "../../Pages/MyReviews/MyReviews";
 import Service from "../../Pages/Services/Service";
 import ServiceCard from "../../Pages/Services/ServiceCard";
 import Orders from "../../Pages/Orders/Orders";
+import ExtraServices from "../../Pages/ExtraServices/ExtraServices";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
       {
         path: "/slider",
         element: <Slider></Slider>,
+      },
+      {
+        path: "/extraServices",
+        element: <ExtraServices></ExtraServices>,
       },
       {
         path: "/orders",
